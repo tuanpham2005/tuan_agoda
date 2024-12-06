@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác Nhận Đặt Phòng</title>
+    <link rel="stylesheet" href="xacNhan.css">
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Xác Nhận Đặt Phòng</h1>
+
+        <div class="reservation-details">
+            <h2>Chi Tiết Đặt Phòng</h2>
+            <p><strong>Họ và Tên:</strong> <span id="customerName"></span></p>
+            <p><strong>Email:</strong> <span id="customerEmail"></span></p>
+            <p><strong>Số Điện Thoại:</strong> <span id="customerPhone"></span></p>
+            <p><strong>Ngày Nhận Phòng:</strong> <span id="checkInDate"></span></p>
+            <p><strong>Ngày Trả Phòng:</strong> <span id="checkOutDate"></span></p>
+            <p><strong>Số Khách:</strong> <span id="guests"></span></p>
+            <p><strong>Tổng Số Tiền:</strong> <span id="totalPrice"></span></p>
+        </div>
+
+        <form id="confirmationForm">
+            <h2>Xác Nhận Đặt Phòng</h2>
+            <p>Vui lòng xác nhận thông tin đặt phòng của bạn.</p>
+
+            <label>
+                <input type="checkbox" id="confirmCheckbox" required>
+                Tôi xác nhận rằng các thông tin trên là chính xác.
+            </label>
+
+            <button type="submit">Xác Nhận</button>
+        </form>
+    </div>
+
+    <script src="confirmation-script.js"></script>
+</body>
+</html>

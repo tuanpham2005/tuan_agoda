@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGODA</title>
+    <link rel="stylesheet" href="thanhToan.css">
+</head>
+<body>
+    <div class="booking-form-container">
+        <h1>Đặt Phòng và Thanh Toán</h1>
+        <form id="bookingForm">
+            <!-- Customer Information -->
+            <fieldset>
+                <legend>Thông Tin Khách Hàng</legend>
+                <label for="fullName">Họ và Tên:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Nhập họ và tên">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Nhập email">
+                
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại" pattern="[0-9]{10}">
+            </fieldset>
+
+            <!-- Booking Details -->
+            <fieldset>
+                <legend>Thông Tin Đặt Phòng</legend>
+                <label for="checkIn">Ngày Nhận Phòng:</label>
+                <input type="date" id="checkIn" name="checkIn" required>
+
+                <label for="checkOut">Ngày Trả Phòng:</label>
+                <input type="date" id="checkOut" name="checkOut" required>
+
+                <label for="guests">Số Khách:</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1 Người</option>
+                    <option value="2">2 Người</option>
+                    <option value="3">3 Người</option>
+                    <option value="4">4 Người</option>
+                </select>
+            </fieldset>
+
+            <!-- Payment Information -->
+            <fieldset>
+                <legend>Thông Tin Thanh Toán</legend>
+                <label for="cardName">Tên trên Thẻ:</label>
+                <input type="text" id="cardName" name="cardName" required placeholder="Nhập tên trên thẻ">
+                
+                <label for="cardNumber">Số Thẻ:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required placeholder="Nhập số thẻ" pattern="[0-9]{16}">
+                
+                <label for="expiryDate">Ngày Hết Hạn:</label>
+                <input type="month" id="expiryDate" name="expiryDate" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" name="cvv" required placeholder="Nhập CVV" pattern="[0-9]{3}">
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit"><a href="xacNhan.html">Xác nhận đặt phòng</a></button>
+        </form>
+    </div>
+
+    <script src="form-script.js"></script>
+</body>
+</html>

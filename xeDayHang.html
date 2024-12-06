@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán Đặt Phòng Khách Sạn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Thông Tin Thanh Toán</h2>
+        
+        <form action="process_payment.php" method="post">
+            <!-- Thông tin người đặt phòng -->
+            <label for="name">Tên người đặt:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Thông tin phòng -->
+            <label for="room-type">Loại phòng:</label>
+            <select id="room-type" name="room_type">
+                <option value="standard">Phòng tiêu chuẩn</option>
+                <option value="deluxe">Phòng cao cấp</option>
+                <option value="suite">Phòng suite</option>
+            </select>
+
+            <label for="check-in">Ngày nhận phòng:</label>
+            <input type="date" id="check-in" name="check_in" required>
+
+            <label for="check-out">Ngày trả phòng:</label>
+            <input type="date" id="check-out" name="check_out" required>
+
+            <!-- Phương thức thanh toán -->
+            <h3>Phương Thức Thanh Toán</h3>
+            <label>
+                <input type="radio" name="payment_method" value="credit_card" required> Thẻ tín dụng
+            </label>
+            <label>
+                <input type="radio" name="payment_method" value="paypal" required> PayPal
+            </label>
+
+            <div class="credit-card-info">
+                <label for="card-number">Số thẻ:</label>
+                <input type="text" id="card-number" name="card_number" placeholder="1234 5678 9012 3456">
+
+                <label for="card-expiry">Ngày hết hạn:</label>
+                <input type="month" id="card-expiry" name="card_expiry">
+
+                <label for="card-cvv">CVV:</label>
+                <input type="text" id="card-cvv" name="card_cvv" maxlength="3">
+            </div>
+
+            <button type="submit" class="pay-btn">Xác nhận thanh toán</button>
+        </form>
+    </div>
+</body>
+</html>

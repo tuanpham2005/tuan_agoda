@@ -1,0 +1,107 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.booking-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    color: #d32f2f;
+}
+
+.recent-booking {
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.room-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.room-info img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.room-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-info {
+    background: #fff7e6;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f9e2b3;
+    border-radius: 5px;
+}
+
+.price-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.best-price {
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff5722;
+}
+
+.price span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.book-now {
+    background: #1976d2;
+    color: white;
+}
+
+.add-to-cart {
+    background: #ddd;
+    color: black;
+}
+
+.availability {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
